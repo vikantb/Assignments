@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+
+    <title>Login</title>
+</head>
+<body>
+    
+    <form action="login" method="POST">
+        <div class="container p-5">
+            
+            <div class="row login font-bold p-1 login-head">
+                <div class="col ">
+                    Login
+                </div>
+            </div>
+
+            <div class="row login-body ">
+                <div class="row mt-2 form-group">
+                    <div class="col-sm-3">
+                        <label for="Name" class="col-form-label">Username: </label>
+                    </div>
+                    <div class="col-sm-6 offset-sm-1 col-12">
+                        <input type="text" id="name" class="form-control"  required/>
+                    </div>
+                </div>
+                <div class="row mt-2 mb-1 form-group">
+                    <div class="col-sm-3">
+                        <label for="Name" class="col-form-label">Password: </label>
+                    </div>
+                    <div class="col-sm-6 offset-sm-1 col-12">
+                        <input type="password" id="name" class="form-control" required/>
+                    </div>
+                </div>
+                <div class="row mt-2 mb-3 form-group">
+                    <div class="col offset-sm-4 "><a href="#">Forgot your password?</a></div>
+                </div>
+            </div>
+
+            <div class="row login footer">
+                <div class="col">
+                    <button type="submit" class="offset-9 btn btn-light-blue">Login >></button>
+                </div>
+            </div>
+
+        </div>
+    </form>
+    
+</body>
+</html>

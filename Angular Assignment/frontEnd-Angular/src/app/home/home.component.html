@@ -1,0 +1,19 @@
+<div class="container mt-4">
+
+    <div *ngIf="error.length>0" class="alert alert-danger " role="alert">
+        {{error}}
+    </div>
+
+    <div class="alert alert-success text-end" role="alert">
+        <div routerLink="/blog/add"  class="btn btn-secondary">New Post</div>
+    </div>
+
+    <div *ngFor="let blog of blogs">
+        
+        <h3 [routerLink]="['/blog',blog.id]" class="text-reset text-decoration-none bg-light m-3" style="cursor: pointer;">  
+            {{blog.title}} 
+        </h3>
+       
+    </div>
+
+</div>

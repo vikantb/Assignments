@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container bdr mt-3">
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="mt-3">Image Management Utility</h2>
+            </div>
+        </div>
+        <!-- <div class="row hr"></div> -->
+        <div class="row hr">
+            <div class="col mt-3">
+                <p>Please select an image file to upload (Max Size 1 MB)</p>
+            </div>
+        </div>
+
+        <!-- upload images -->
+        <form action="image-upload" method="post">
+            <div class="row mt-3">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-6 mb-1">
+                            <input class="form-control" type="text" name="image-name" />
+                        </div>
+                        <div class="col-sm-6 mb-1">
+                            <input class="form-control" type="file" name="image-file" />
+                        </div>
+                    </div>  
+                </div>
+                <div class="col">
+                    <button type="submit" class="col-sm-4 offset-sm-3 col-12 mb-1 btn btn-secondary">Submit</button>
+                    <button type="reset"  class="col-sm-4 col-12 btn btn-secondary mb-1">Cancel</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- display images -->
+        <div class="row m-1 ">
+
+            <div class="row">
+                <div class="col mb-3 mt-2 font-bold">
+                    Uploaded Images
+                </div>
+            </div>
+
+            <div class="row font-bold ">
+                <div class="col-sm-1 col-2 bdrtd bl-black">
+                    S.No
+                </div>
+                <div class="col-sm-3 col bdrtd">
+                    Name
+                </div>
+                <div class="col-sm-2 col bdrtd">
+                   Size
+                </div>
+                <div class="col-sm-3 col-6 bdrtd">
+                   Preview
+                </div>
+                <div class="col-sm-3 col-6 bdrtd">
+                    Actions
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

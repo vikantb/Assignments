@@ -1,0 +1,21 @@
+<div class="container">
+
+    <div *ngIf="error.length>0" class="alert alert-danger " role="alert">
+        {{error}}
+    </div>
+
+    <div class="alert alert-success mt-4" role="alert">
+        <div class="row align-items-center">
+            <div class="col">
+                <div routerLink="/home" class="btn btn-outline-secondary"><h4>back to HOME</h4></div>
+            </div>
+            <div class="col text-end">
+                <div [routerLink]="['/blog','edit',blog.id]" class="btn btn-success col-sm-4">Edit</div>
+                <div (click)="delete(blog.id)" class="btn btn-primary col-sm-4 offset-1">Delete</div>
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-secondary p-4" style="height:60vh;font-weight: bold;" role="alert">
+        {{blog.content}}
+      </div>
+</div>

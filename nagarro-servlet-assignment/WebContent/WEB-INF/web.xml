@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	
+	<display-name>nagarro-servlet-assignment</display-name>
+	<welcome-file-list>
+		<welcome-file>login.html</welcome-file>
+		<welcome-file>login.htm</welcome-file>
+		<welcome-file>login.jsp</welcome-file>
+		<welcome-file>login.html</welcome-file>
+		<welcome-file>login.htm</welcome-file>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.servlets.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DashBoard</servlet-name>
+		<servlet-class>com.servlets.DashBoard</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DashBoard</servlet-name>
+		<url-pattern>/dashboard</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddImage</servlet-name>
+		<servlet-class>com.servlets.AddImage</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddImage</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeleteImage</servlet-name>
+		<servlet-class>com.servlets.DeleteImage</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteImage</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Edit</servlet-name>
+		<servlet-class>com.servlets.Edit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Edit</servlet-name>
+		<url-pattern>/edit</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ImageLoad</servlet-name>
+		<servlet-class>com.servlets.ImageLoader</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ImageLoad</servlet-name>
+		<url-pattern>/imageload</url-pattern>
+	</servlet-mapping>
+
+</web-app>
